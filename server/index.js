@@ -7,7 +7,7 @@ const app = express ();
 const port = process.env.PORT || 5000
 
 // app.use(express.static('public'))
-app.use('/static', express.static(path.join(__dirname, '../public')))
+app.use('/static', express.static(path.join(__dirname, '../public/styles.css')))
 
 app.use('/public/images',express.static(path.join(__dirname, '../public/images')))
 
